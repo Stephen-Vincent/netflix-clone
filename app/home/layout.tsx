@@ -1,12 +1,17 @@
+import { ReactNode } from "react";
 import { getServerSession } from "next-auth";
-import { authOptions } from "./utils/auth";
+import { authOptions } from "../utils/auth";
 import { redirect } from "next/navigation";
 
-export default async function Home() {
+export default async function HomeLayout({
+  children,
+}: {
+  children: ReactNode;
+}) {
   const session = await getServerSession(authOptions);
+
   if (!session) {
     return redirect("/login");
-  } else {
-    return redirect("/home");
   }
+  return <div>{children}</div>;
 }
