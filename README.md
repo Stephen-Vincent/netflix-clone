@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Netflix Clone Project
 
-## Getting Started
+This Netflix clone project aims to replicate the core functionality and user experience of the popular streaming platform. Built with a modern development stack, this application demonstrates a robust implementation of web technologies to create a scalable, performant, and visually appealing web application.
 
-First, run the development server:
+## Technologies Used
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Next.js 14
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Utilized as the core framework, **Next.js 14** provides a solid foundation for building our application, offering features like server-side rendering, static site generation, and automatic optimization for enhanced performance and SEO.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### TailwindCSS
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+For styling, **TailwindCSS** has been chosen for its utility-first approach, enabling rapid UI development with a high degree of customization and responsiveness, ensuring a sleek and modern design.
 
-## Learn More
+### Shade UI
 
-To learn more about Next.js, take a look at the following resources:
+Integrating **Shade UI** offers a collection of beautifully designed, ready-to-use components that enhance the user interface, making it more engaging and intuitive for users.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### NextAuth.js
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**NextAuth.js** is employed to manage authentication seamlessly, offering a simple yet secure solution for handling user sessions and social logins, ensuring a smooth user experience.
 
-## Deploy on Vercel
+### Supabase
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+As our backend and database solution, **Supabase** provides a scalable and easy-to-use database service, complete with real-time capabilities and built-in authentication, facilitating the storage and retrieval of data efficiently.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Prisma
+
+**Prisma** is used as an ORM (Object Relational Mapping) tool, simplifying database operations with its powerful and type-safe API, making data access and management in our application straightforward and maintainable.
